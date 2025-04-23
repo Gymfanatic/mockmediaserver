@@ -1,0 +1,9 @@
+{
+  "media": [
+    {
+      "title": "Sample Video",
+      "type": "video",
+      "url": "http://example.com/video.mp4"
+    }
+  ]
+}

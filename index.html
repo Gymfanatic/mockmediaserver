@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Media Server API Documentation</title>
+</head>
+<body>
+  <h1>Mock Media Server API Documentation</h1>
+  <p>This is a simple API for managing media data.</p>
+
+  <h2>API Endpoints</h2>
+
+  <h3>GET /media</h3>
+  <p>Returns a list of all media items stored on the server.</p>
+
+  <h3>POST /media</h3>
+  <p>Allows you to add a new media item. The request body should contain a JSON object with the following format:</p>
+  <pre>
+  {
+    "name": "Media Name",
+    "url": "http://example.com/media.jpg"
+  }
+  </pre>
+
+  <h3>Example cURL Commands</h3>
+  <pre>
+  curl -X GET http://localhost:3000/media
+
+  curl -X POST http://localhost:3000/media -H "Content-Type: application/json" -d '{"name": "New Media", "url": "http://example.com/media.jpg"}'
+  </pre>
+</body>
+</html>
